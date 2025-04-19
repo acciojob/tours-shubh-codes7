@@ -22,9 +22,9 @@ const Tour = ({ tour, tours, setTours }) => {
           className="tour-info"
           id={`tour-item-para-${id}`}  // ✅ Add this for test 2
         >
-          {showMore ? info : info.slice(0, 200) + "..."}
+          {showMore ? info : info.split(' ').slice(0, 200).join(" ") + "..."}
         </p>
-        <button onClick={toggleText}>
+        <button id={`see-more-${id}`} onClick={toggleText}>
           {showMore ? "Show Less" : "Show More"}
         </button>
       </div>
