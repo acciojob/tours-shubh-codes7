@@ -9,4 +9,20 @@ button{
     text-align: center;
     justify-content: center;
     align-items: center;
+    display: block;
+    margin-inline: auto;
+}
+
+.delete-btn{
+    color: red;
+}
+
+.tour-price{
+    font-weight: bold;
+    text-align: center;
+}
+
+.tour-info{
+    text-align: center;
+    margin-inline: 90px;
 }
